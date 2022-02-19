@@ -15,10 +15,10 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   List pages = [
-    HomePage(),
-    NotificationPage(),
-    FavoritePage(),
-    MyPage(),
+    const HomePage(),
+    const NotificationPage(),
+    const FavoritePage(),
+    const MyPage(),
   ];
   int currentIndex = 0;
   void onTap(int index) {
@@ -41,7 +41,7 @@ class _MainPageState extends State<MainPage> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         elevation: 0,
-        items: [
+        items: const [
           BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
           BottomNavigationBarItem(
               label: 'Catalog', icon: Icon(Icons.notifications)),
